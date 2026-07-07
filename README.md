@@ -52,7 +52,7 @@
 
 ```bash
 # 安装 skill
-hermes skill install ran666888/agent-daily-installer
+hermes skill install AmaosAIGC/agent-daily-installer
 
 # 然后对你的 Agent 说👇
 ```
@@ -82,7 +82,7 @@ Agent 就会自动执行：
 
 日报写好之后，想同步发到微信公众号？
 
-搭配另一个开源项目 **[Agent WeChat Publisher](https://github.com/ran666888/agent-wechat-publisher)** 使用：
+搭配另一个开源项目 **[Agent WeChat Publisher](https://github.com/AmaosAIGC/agent-wechat-publisher)** 使用：
 
 ```bash
 # 你的 Agent 现在会说👇
@@ -136,7 +136,7 @@ Agent 就会自动执行：
 ### 1. 克隆
 
 ```bash
-git clone https://github.com/ran666888/agent-daily-auto.git
+git clone https://github.com/AmaosAIGC/agent-daily-auto.git
 cd agent-daily-auto
 ```
 

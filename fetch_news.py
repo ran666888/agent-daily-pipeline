@@ -13,7 +13,7 @@
 
 import urllib.request, json, sys, os
 
-UA = "Mozilla/5.0 (compatible; DailyBot/1.0; +https://github.com/ran666888/agent-daily-auto)"
+UA = "Mozilla/5.0 (compatible; DailyBot/1.0; +https://github.com/AmaosAIGC/agent-daily-auto)"
 TO = 20
 
 def fetch_hn(query, hits=10):

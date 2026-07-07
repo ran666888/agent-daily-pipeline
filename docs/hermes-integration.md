@@ -27,7 +27,7 @@ git --version
 ### Step 1: 克隆仓库
 
 ```bash
-git clone https://github.com/ran666888/agent-daily-auto.git
+git clone https://github.com/AmaosAIGC/agent-daily-auto.git
 cd agent-daily-auto
 ```
 
@@ -109,5 +109,5 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache" 
 
 ## 关联资源
 
-- 代码仓库：https://github.com/ran666888/agent-daily-auto
+- 代码仓库：https://github.com/AmaosAIGC/agent-daily-auto
 - 线上演示：https://www.agthub.tech/daily （活案例，每天都在跑）

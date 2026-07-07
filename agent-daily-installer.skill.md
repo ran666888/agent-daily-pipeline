@@ -26,7 +26,7 @@ Agent 会自动完成：
 
 ## 代码仓库
 
-https://github.com/ran666888/agent-daily-auto
+https://github.com/AmaosAIGC/agent-daily-auto
 
 ## 演示站
 
@@ -46,7 +46,7 @@ git --version
 
 ```bash
 cd ~/projects
-git clone https://github.com/ran666888/agent-daily-auto.git
+git clone https://github.com/AmaosAIGC/agent-daily-auto.git
 cd agent-daily-auto
 ```
 
