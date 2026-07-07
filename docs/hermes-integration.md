@@ -1,11 +1,11 @@
 ---
 name: agent-daily-installer
-description: 安装并配置 agent-daily-pipeline 日报系统。克隆仓库 → 配 .env → 跑日报。当用户说「跑日报」「装日报」「部署日报」时使用。
+description: 安装并配置 agent-daily-auto 日报系统。克隆仓库 → 配 .env → 跑日报。当用户说「跑日报」「装日报」「部署日报」时使用。
 ---
 
 # Agent Daily Installer
 
-这个 skill 帮你安装和运行 **agent-daily-pipeline**——一套自动抓取 AI 新闻、生成文章、部署到 Vercel 的日报系统。
+这个 skill 帮你安装和运行 **agent-daily-auto**——一套自动抓取 AI 新闻、生成文章、部署到 Vercel 的日报系统。
 
 ## 前置检查
 
@@ -27,8 +27,8 @@ git --version
 ### Step 1: 克隆仓库
 
 ```bash
-git clone https://github.com/ran666888/agent-daily-pipeline.git
-cd agent-daily-pipeline
+git clone https://github.com/ran666888/agent-daily-auto.git
+cd agent-daily-auto
 ```
 
 ### Step 2: 配置环境变量
@@ -40,7 +40,7 @@ cp .env.example .env
 编辑 `.env`，填入你的配置：
 
 ```env
-PROJECT_DIR=/home/user/agent-daily-pipeline
+PROJECT_DIR=/home/user/agent-daily-auto
 ```
 
 ### Step 3: 测试抓取
@@ -67,7 +67,7 @@ python3 scripts/run_daily_update.py
 当用户说「跑日报」时：
 
 ```bash
-cd /path/to/agent-daily-pipeline
+cd /path/to/agent-daily-auto
 
 # 1. 抓取最新数据
 python3 fetch_news.py > /tmp/raw_news.txt
@@ -109,5 +109,5 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache" 
 
 ## 关联资源
 
-- 代码仓库：https://github.com/ran666888/agent-daily-pipeline
+- 代码仓库：https://github.com/ran666888/agent-daily-auto
 - 线上演示：https://www.agthub.tech/daily （活案例，每天都在跑）

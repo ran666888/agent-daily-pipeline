@@ -1,13 +1,13 @@
 ---
 name: agent-daily-installer
-description: 安装并配置 agent-daily-pipeline 日报系统。克隆仓库 → 配 .env → 运行日报。当用户说「跑日报」「装日报」「部署日报」时使用。
+description: 安装并配置 agent-daily-auto 日报系统。克隆仓库 → 配 .env → 运行日报。当用户说「跑日报」「装日报」「部署日报」时使用。
 tags: [daily, news, automation, pipeline]
 keywords: [日报, daily, news, agent, pipeline]
 ---
 
 # Agent Daily Installer
 
-帮助你的 Hermes Agent 安装并运行 **agent-daily-pipeline**——一套自动抓取 AI 新闻、生成文章、部署到 Vercel 的日报系统。
+帮助你的 Hermes Agent 安装并运行 **agent-daily-auto**——一套自动抓取 AI 新闻、生成文章、部署到 Vercel 的日报系统。
 
 ## 这是什么
 
@@ -26,7 +26,7 @@ Agent 会自动完成：
 
 ## 代码仓库
 
-https://github.com/ran666888/agent-daily-pipeline
+https://github.com/ran666888/agent-daily-auto
 
 ## 演示站
 
@@ -46,8 +46,8 @@ git --version
 
 ```bash
 cd ~/projects
-git clone https://github.com/ran666888/agent-daily-pipeline.git
-cd agent-daily-pipeline
+git clone https://github.com/ran666888/agent-daily-auto.git
+cd agent-daily-auto
 ```
 
 ### Step 2: 配置 .env
@@ -59,7 +59,7 @@ cp .env.example .env
 
 最小配置：
 ```env
-PROJECT_DIR=/home/xxx/agent-daily-pipeline
+PROJECT_DIR=/home/xxx/agent-daily-auto
 ```
 
 ### Step 3: 填充日报数据
@@ -76,7 +76,7 @@ cp daily-data.js.example daily-data.js
 ### 1️⃣ 抓取数据
 
 ```bash
-cd /path/to/agent-daily-pipeline
+cd /path/to/agent-daily-auto
 python3 fetch_news.py > /tmp/news_data.json
 ```
 

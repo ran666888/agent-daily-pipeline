@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""agent-daily-pipeline: fetch_news.py
+"""agent-daily-auto: fetch_news.py
 
 多源数据抓取 — 从 HN/TechCrunch/arXiv/HF Daily Papers/GitHub Trending
 抓取最新 AI Agent 相关新闻和技术动态。
@@ -13,7 +13,7 @@
 
 import urllib.request, json, sys, os
 
-UA = "Mozilla/5.0 (compatible; DailyBot/1.0; +https://github.com/ran666888/agent-daily-pipeline)"
+UA = "Mozilla/5.0 (compatible; DailyBot/1.0; +https://github.com/ran666888/agent-daily-auto)"
 TO = 20
 
 def fetch_hn(query, hits=10):

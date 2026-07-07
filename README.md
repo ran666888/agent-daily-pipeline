@@ -136,8 +136,8 @@ Agent 就会自动执行：
 ### 1. 克隆
 
 ```bash
-git clone https://github.com/ran666888/agent-daily-pipeline.git
-cd agent-daily-pipeline
+git clone https://github.com/ran666888/agent-daily-auto.git
+cd agent-daily-auto
 ```
 
 ### 2. 配置
@@ -181,7 +181,7 @@ python3 scripts/run_daily_update.py
 ## 项目结构
 
 ```
-agent-daily-pipeline/
+agent-daily-auto/
 ├── fetch_news.py              # 多源数据抓取（5个源）
 ├── daily.html                 # 日报展示页模板
 ├── vercel.json                # Vercel 部署配置
